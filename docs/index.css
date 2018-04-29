@@ -1,0 +1,217 @@
+/*
+
+*/
+body {
+	font-family: 'Audiowide', cursive;
+	font-size:16px;
+	margin:0 0 0 0;
+	background-color:#05353C;
+	color:#0ce6ea;
+}
+button {
+	position:relative;
+	border:2px solid #4e0000;
+	color:#4e0000;
+	background-color:#ffffff;
+	border-radius:10px;
+	font-size:17px;
+	font-weight:bold;
+	cursor:pointer;
+	padding:5px 10px 5px 10px;
+}
+input {
+	border:0;
+	border-bottom:1px solid #0ce6ea;
+	background:transparent;
+	font-family:'Helvetica Neue', Arial, sans-serif;
+	font-size:21px;
+	outline-width: 0;
+	width:130px;
+	color:#0ce6ea;
+}
+#loading {
+	position:relative;
+	margin:auto;
+	width:360px;
+	height:460px;
+}
+#content {
+	position:absolute;
+	top:0;
+	left:0;
+	width:360px;
+	height:460px;
+	display:none;
+}
+#inner_spinner {
+	-webkit-animation: ccw 4s infinite linear;
+	transform-origin: 180px 270px;
+}
+#outter_spinner {
+	-webkit-animation: cw 4s infinite linear;
+	transform-origin: 180px 270px;
+}
+#middle_spinner {
+	-webkit-animation: ccw 20s infinite linear;
+	transform-origin: 180px 270px;
+}
+#line_spinner {
+	-webkit-animation: cw 15s infinite linear;
+	transform-origin: 180px 270px;
+}
+@-webkit-keyframes ccw {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(-359deg);
+	}
+}
+@-webkit-keyframes cw {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+	}
+}
+#percent {
+	position:absolute;
+	top:60px;
+	left:165px;
+	width:100px;
+	text-align:center;
+	font-size:21px;
+}
+#warning {
+	position:absolute;
+	top:20px;
+	left:20px;
+	width:314px;
+	height:180px;
+	border:3px solid #4e0000;
+	border-radius:10px;
+	background-color:#ff0000;
+}
+#warning_icon {
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:50px;
+	height:50px;
+	background-image:url(https://vitruvianman.000webhostapp.com/avengers/images/warning.png);
+}
+#warning_text {
+	position:absolute;
+	top:10px;
+	left:70px;
+	width:230px;
+	font-family:arial;
+	color:#ffffff;
+}
+.characters {
+	position:relative;
+	width:340px;
+	height:90px;
+	padding:0;
+	margin-top:0;
+	cursor:pointer;
+	display:none;
+}
+.characters_div {
+	position:relative;
+	width:346px;
+	height:80px;
+	border:2px solid #0CE6EA;
+	background-color:#022227;
+	border-radius:10px;
+}
+.characters_img {
+	position:absolute;
+	top:5px;
+	left:5px;
+	width:70px;
+	height:70px;
+	background-size:70px 70px;
+	border-radius:6px;
+}
+.characters_name {
+	position:absolute;
+	top:5px;
+	left:85px;
+	font-size:23px;
+}
+.characters_aka {
+	position:absolute;
+	top:30px;
+	left:85px;
+	font-size:17px;
+}
+.characters_actor {
+	position:absolute;
+	top:50px;
+	left:85px;
+	font-size:16px;
+}
+.selected {
+	color:yellow;
+	background-color:black;
+}
+#info {
+	position:absolute;
+	top:0;
+	left:0;
+	width:360px;
+	height:460px;
+	background-color:#05353C;
+	display:none;
+}
+#info_title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:360px;
+	height:35px;
+	padding-top:10px;
+	border-bottom:1px solid #022227;
+	font-size:23px;
+}
+#info_close {
+	position:absolute;
+	border:2px solid #ffffff;
+	color:#ffffff;
+	background-color:#022227;
+	border-radius:10px;
+	font-size:17px;
+	font-weight:bold;
+	cursor:pointer;
+	padding:5px 10px 5px 10px;
+	top:5px;
+	right:10px;
+}
+#info_img {
+	float:left;
+	width:165px;
+	height:165px;
+	background-size:165px 165px;
+	margin-bottom:5px;
+	background-color:grey;
+}
+#info_img_irl {
+	float:right;
+	width:165px;
+	height:165px;
+	background-size:165px 165px;
+	margin-bottom:5px;
+	background-color:grey;
+}
+#info_text {
+	position:absolute;
+	top:46px;
+	left:0;
+	width:350px;
+	height:405px;
+	padding:5px;
+	overflow:auto;
+	font-family: arial, helvetica;
+}
