@@ -1,0 +1,97 @@
+body {
+	font-family: 'Aldrich', sans-serif;
+	font-size:17px;
+	margin:0;
+	background-color:black;
+	color:lightgrey;
+	text-align:center;
+}
+canvas {
+	position:absolute;
+	background-image:url(https://i.imgur.com/5nPDxdh.png);
+	top:0;
+	display:none;
+	z-index:1000;
+}
+#header {
+	position:relative;
+	margin:auto;
+	width:360px;
+	height:0;
+	z-index:1001;
+}
+#cover {
+	position:absolute;
+	top:0;
+	left:0;
+	width:360px;
+	height:460px;
+	background-image:url(https://i.imgur.com/ydrfQUG.png);
+	z-index:1000;
+	display:none;
+}
+#info {
+	position:absolute;
+	top:0;
+	left:0;
+	width:340px;
+	height:440px;
+	padding:10px;
+	background-color:black;
+	overflow:hidden;
+	color:lightgrey;
+	z-index:1000;
+	display:none;
+}
+.btn {
+	background: #bdbdbd;
+	background-image: -webkit-linear-gradient(top, #bdbdbd, #333333);
+	background-image: -moz-linear-gradient(top, #bdbdbd, #333333);
+	background-image: -ms-linear-gradient(top, #bdbdbd, #333333);
+	background-image: -o-linear-gradient(top, #bdbdbd, #333333);
+	background-image: linear-gradient(to bottom, #bdbdbd, #333333);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: 'Aldrich', sans-serif;
+	color: #ffffff;
+	font-size: 15px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	outline:none;
+	cursor:pointer;
+}
+.btn:hover {
+	background: #8f8f8f;
+	background-image: -webkit-linear-gradient(top, #8f8f8f, #000000);
+	background-image: -moz-linear-gradient(top, #8f8f8f, #000000);
+	background-image: -ms-linear-gradient(top, #8f8f8f, #000000);
+	background-image: -o-linear-gradient(top, #8f8f8f, #000000);
+	background-image: linear-gradient(to bottom, #8f8f8f, #000000);
+	text-decoration: none;
+}
+.gem {
+	position:relative;
+	width:50px;
+	height:60px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+.gem_soul {
+	background-image:url(https://i.imgur.com/Me1wAd6.png);
+}
+.gem_time {
+	background-image:url(https://i.imgur.com/xelw7Ol.png);
+}
+.gem_space {
+	background-image:url(https://i.imgur.com/HibJePl.png);
+}
+.gem_mind {
+	background-image:url(https://i.imgur.com/X3y1Pjy.png);
+}
+.gem_reality {
+	background-image:url(https://i.imgur.com/YlAIINd.png);
+}
+.gem_power {
+	background-image:url(https://i.imgur.com/molURa1.png);
+}
