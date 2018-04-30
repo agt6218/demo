@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>AVENGERS - THE INFINITY GAUNTLET</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type='text/javascript' src='java.js'></script>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+</head>
+<body>
+	<div id="header" style="text-align">
+		<button id="new_game" class="btn" style="display:none;position:absolute;width:140px;top:300px;left:100px;">
+			New Game
+		</button>
+	</div>
+	<div id="cover">
+		<button id="play" class="btn" style="position:absolute;bottom:10px;left:10px;">PLAY</button>
+		<button id="help" class="btn" style="position:absolute;bottom:10px;right:10px;">HELP</button>
+	</div>
+	<div id="info">
+		<div style="font-size:35px;">
+			Avengers
+		</div>
+		<div style="font-size:23px;">
+			The Infinity Gauntlet
+		</div>
+		<br>
+		<div style="width:320px;height:290px;overflow:auto;">
+			The goal is to make lines, horizontally or vertically, of three or more matching gems. Swap two adjacent pieces, and if you make a line of three or more pieces, it will disappear and new pieces will fall onto the board. If no moves are possible, the game ends.
+			<br><br>
+			<b>THE GEMS</b>:
+			<hr>
+			<table border=0>
+				<tr>
+					<th align=left colspan=2>
+						Soul
+					</th>
+				</tr>
+				<tr>
+					<th valign=top>
+						<div class="gem gem_soul"></div>
+					</th>
+					<th align=left valign=top style="font-size:15px;">
+						Allows the user to steal, control, manipulate, and alter living and dead souls. The Soul Gem is also the gateway to an idyllic pocket universe. At full potential, the Soul Gem grants the user control over all life in the universe.
+					</th>
+				</tr>
+				<tr>
+					<th align=left colspan=2>
+						Time
+					</th>
+				</tr>
+				<tr>
+					<th valign=top>
+						<div class="gem gem_time"></div>
+					</th>
+					<th align=left valign=top style="font-size:15px;">
+						Allows the user to see into the past and the future; stop, slow down, speed up or reverse the flow of time; time travel; change the past and the future; age and de-age beings; and trap people or entire universes in unending loops of time. At full potential, the Time Gem grants the user omniscience and total control over the past, present and future.
+					</th>
+				</tr>
+				<tr>
+					<th align=left colspan=2>
+						Space
+					</th>
+				</tr>
+				<tr>
+					<th valign=top>
+						<div class="gem gem_space"></div>
+					</th>
+					<th align=left valign=top style="font-size:15px;">
+						Allows the user to exist in any location; move any object anywhere throughout reality; warp or rearrange space; teleport themselves and others any place the user can imagine; increase their speed; and alter the distance between objects contrary to the laws of physics. At full potential, the Space Gem grants the user omnipresence.
+					</th>
+				</tr>
+				<tr>
+					<th align=left colspan=2>
+						Mind
+					</th>
+				</tr>
+				<tr>
+					<th valign=top>
+						<div class="gem gem_mind"></div>
+					</th>
+					<th align=left valign=top style="font-size:15px;">
+						Allows the user to enhance their mental and psionic abilities and access the thoughts and dreams of other beings. When backed by the Power Gem, the Mind Gem can access all minds in existence simultaneously. The Mind Gem is also the manifestation of the universal subconscious. At full potential, the Mind Gem grants the user omniscience.
+					</th>
+				</tr>
+				<tr>
+					<th align=left colspan=2>
+						Reality
+					</th>
+				</tr>
+				<tr>
+					<th valign=top>
+						<div class="gem gem_reality"></div>
+					</th>
+					<th align=left valign=top style="font-size:15px;">
+						Allows the user to fulfill their wishes, even if the wish is in direct contradiction with scientific laws, and do things that would normally be impossible; and create any type of alternate reality the user wishes. When backed by the power of the other Gems, the Reality Gem allows the user to alter reality on a universal scale.
+					</th>
+				</tr>
+				<tr>
+					<th align=left colspan=2>
+						Power
+					</th>
+				</tr>
+				<tr>
+					<th valign=top>
+						<div class="gem gem_power"></div>
+					</th>
+					<th align=left valign=top style="font-size:15px;">
+						Allows the user to access and manipulate all forms of energy; enhance their physical strength and durability; and boost the effects of the other five Gems. At full potential, the Power Gem grants the user omnipotence.
+					</th>
+				</tr>
+			</table>
+		</div>
+		<button id="info_close" class="btn" style="position:absolute;bottom:10px;right:10px;">CLOSE</button>
+	</div>
+	<canvas id="viewport" width="360" height="460"></canvas>
+</body>
+</html> 
