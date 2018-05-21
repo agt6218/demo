@@ -1,0 +1,102 @@
+
+*/
+body {
+	font-family: 'Russo One', sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	margin:0;
+	background-color:#e0e0e0;
+}
+#main {
+	position:relative;
+	margin:auto;
+	width:360px;
+	height:460px;
+	overflow:hidden;
+}
+#title {
+	position:absolute;
+	top:10px;
+	left:0;
+	width:100%;
+	text-align:center;
+	z-index:100;
+}
+#subtitle {
+	position:absolute;
+	top:50px;
+	left:0;
+	width:100%;
+	text-align:center;
+	font-family: arial, helvetica;
+	font-size:19px;
+	z-index:100;
+}
+.matryoshkas {
+	position:absolute;
+	top:70px;
+	left:54px;
+	width:252px;
+	height:382px;
+	cursor:pointer;
+	-webkit-transition-duration: 300ms;
+	-moz-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
+	transition-duration: 300ms;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.inside {
+	-ms-transform: scale(.8,.8);
+	-webkit-transform: scale(.8,.8);
+	transform: scale(.8,.8);
+}
+.matryoshka_top {
+	position:absolute;
+	top:0;
+	left:0;
+	width:252px;
+	height:191px;
+	background-image:url(https://i.imgur.com/C74VGIz.png);
+	background-position:0 0;
+}
+.matryoshka_bottom {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:252px;
+	height:191px;
+	background-image:url(https://i.imgur.com/C74VGIz.png);
+	background-position:0 -191px;
+}
+#texts {
+	position:absolute;
+	top:70px;
+	left:0;
+	width:360px;
+	height:370px;
+	background-image:url(https://i.imgur.com/rewxt5T.png);
+	-webkit-transition-duration: 500ms;
+	-moz-transition-duration: 500ms;
+	-o-transition-duration: 500ms;
+	transition-duration: 500ms;
+	-ms-transform: scale(.3,.3);
+	-webkit-transform: scale(.3,.3);
+	transform: scale(.3,.3);
+	display:none;
+}
+#loading {
+	position:absolute;
+	font-family:arial,helvetica;
+	top:100px;
+	left:0;
+	width:100%;
+	color:#000000;
+	font-size:23px;
+	text-align:center;
+}
